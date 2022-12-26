@@ -1,12 +1,425 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,500;1,700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./styles/style.css" />
+        <link rel="stylesheet" href="./styles/base.css" />
+        <link rel="stylesheet" href="./styles/reponsive.css" />
+    </head>
+    <body>
+        <div class="app">
+            <header class="header">
+                <div class="grid">
+                    <nav class="header__nav">
+                        <div class="herader__nav-mobile" hidden>
+                            <label for="nav__moblie-input" class="herader__nav-bars">
+                                <i class="fas fa-bars"></i>
+                            </label>
+                            <input type="checkbox" hidden class="nav__input" id="nav__moblie-input" />
+                            <label for="nav__moblie-input" class="nav__overlay"></label>
+                            <div class="nav__moblie">
+                                <div class="mobile-search">
+                                    <input type="text" placeholder="Tìm Kiếm Sản Phẩm" />
+                                    <i class="fas fa-search"></i>
+                                </div>
+                                <ul class="nav-moblie-list">
+                                    <li class="nav-moblie-link"><a>Home</a></li>
+                                    <li class="nav-moblie-link"><a>Pages</a></li>
+                                    <li class="nav-moblie-link"><a>classes</a></li>
+                                    <li class="nav-moblie-link"><a>Portfolio</a></li>
+                                    <li class="nav-moblie-link"><a>Blog</a></li>
+                                    <li class="nav-moblie-link"><a>Contacts</a></li>
+                                    <li class="nav-moblie-link"><a>Login</a></li>
+                                    <li class="nav-moblie-link"><a>Register</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="header-logo">
+                            <img src="./acssets/image/Logo.png" alt="Logo" />
+                        </div>
+                        <ul class="header__nav-list hide-on-mobile">
+                            <li class="header__nav-link"><a>Home</a></li>
+                            <li class="header__nav-link"><a>Pages</a></li>
+                            <li class="header__nav-link"><a>classes</a></li>
+                            <li class="header__nav-link"><a>Portfolio</a></li>
+                            <li class="header__nav-link"><a>Blog</a></li>
+                            <li class="header__nav-link"><a>Contacts</a></li>
+                        </ul>
+                        <div class="header__nav-icons hide-on-mobile">
+                            <div class="icon-search">
+                                <i class="fas fa-search"> </i>
+                            </div>
+                            <div class="icon-cart">
+                                <i class="fas fa-cart-plus"></i>
+                            </div>
+                            <div class="icon-user">
+                                <i class="far fa-user"></i>
+                            </div>
+                        </div>
+                        <div class="herder__nav-cart-mobile" hidden>
+                            <i class="fas fa-cart-plus"></i>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+            <div class="header-down">
+                <div class="grid">
+                    <div class="header-down-main">
+                        <div class="header-down-left">
+                            <div class="text-up-left">Dumbbells Shop</div>
+                            <div class="text-down-left">Best Body Fitness</div>
+                            <div class="text-description-left">
+                                Áp dụng những kiến thức đã học để cắt 1 giao diện hoàn chỉnh Yêu cầu: Chuyển giao diện
+                                từ dạng psd sang dạng html, css giống với design, có tương thích trên mọi thiết bị. Trên
+                                màn hình tablet và mobile tự thiết kế sao cho phù hợp với từng màn hình
+                            </div>
+                            <div class="header-down-left-button">
+                                <button>SHOP NOW</button>
+                            </div>
+                        </div>
+                        <div class="header-down-right">
+                            <!-- <img src="./acssets/image/Screenshot_1.png" alt="123" /> -->
+                        </div>
+                        <div class="header-down-slide">
+                            <div class="slide-1"></div>
+                            <div class="slide-2">
+                                <img src="./acssets/image/strength.png" alt="123" />
+                                <div class="slide-text">STRENGTH</div>
+                                <div class="slide-description">
+                                    Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt
+                                    ut labore et dolore magna aliqua.
+                                </div>
+                            </div>
+                            <div class="slide-3"></div>
+                            <div class="slide-4">
+                                <img src="./acssets/image/power-rack.png" alt="123" />
+                                <div class="slide-text">POWER RACK & CAGES</div>
+                                <div class="slide-description">
+                                    Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt
+                                    ut labore et dolore magna aliqua.
+                                </div>
+                            </div>
+                            <div class="slide-5"></div>
+                            <div class="slide-6">
+                                <img src="./acssets/image/dumbbells.png" alt="123" />
+                                <div class="slide-text">DUMMBBELLS</div>
+                                <div class="slide-description">
+                                    Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt
+                                    ut labore et dolore magna aliqua.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="grid">
+                    <div class="container-section">
+                        <ul class="section-title">
+                            <li class="section-tap-item section-top-sellers active">TOP SELLERS</li>
+                            <li class="section-tap-item section-feartured">FEATURED</li>
+                            <li class="section-tap-item section-most-reviews">MOST REVIEWS</li>
+                            <div class="line"></div>
+                        </ul>
+                    </div>
+                    <div class="list-product">
+                        <div class="product-item">
+                            <div
+                                class="product-item-img"
+                                style="background-image: url(./acssets/image/body-champ-power.png)"
+                            ></div>
+                            <!-- <img class="product-item-img" src="./acssets/image/body-champ-power.png" alt="123" /> -->
+                            <div class="add-to-cart">
+                                <div class="icon-cart active">
+                                    <i class="fas fa-cart-plus"></i>
+                                </div>
+                                <div class="icon-eye">
+                                    <i class="far fa-eye"></i>
+                                </div>
+                                <div class="icon-heart">
+                                    <i class="far fa-heart"></i>
+                                </div>
+                                <div class="icon-left-right">
+                                    <i class="fas fa-retweet"></i>
+                                </div>
+                            </div>
+                            <div class="product-item-name">Body Champ caridio</div>
+                            <div class="product-item-price">$324.6</div>
+                            <div class=""></div>
+                        </div>
+
+                        <div class="product-item">
+                            <div
+                                class="product-item-img"
+                                style="background-image: url(./acssets/image/body-solid.png)"
+                            ></div>
+                            <!-- <img class="product-item-img" src="./acssets/image/body-solid.png" alt="123" /> -->
+                            <div class="add-to-cart">
+                                <div class="icon-cart active">
+                                    <i class="fas fa-cart-plus"></i>
+                                </div>
+                                <div class="icon-eye">
+                                    <i class="far fa-eye"></i>
+                                </div>
+                                <div class="icon-heart">
+                                    <i class="far fa-heart"></i>
+                                </div>
+                                <div class="icon-left-right">
+                                    <i class="fas fa-retweet"></i>
+                                </div>
+                            </div>
+                            <div class="product-item-name">Body Solid GCEC340</div>
+                            <div class="product-item-price">$214.00</div>
+                            <div class=""></div>
+                        </div>
+                        <div class="product-item">
+                            <div
+                                class="product-item-img"
+                                style="background-image: url(./acssets/image/bowflex-bxe116.png)"
+                            ></div>
+                            <!-- <img class="product-item-img" src="./acssets/image/bowflex-bxe116.png" alt="123" /> -->
+                            <div class="add-to-cart">
+                                <div class="icon-cart">
+                                    <i class="fas fa-cart-plus"></i>
+                                </div>
+                                <div class="icon-eye">
+                                    <i class="far fa-eye"></i>
+                                </div>
+                                <div class="icon-heart">
+                                    <i class="far fa-heart"></i>
+                                </div>
+                                <div class="icon-left-right">
+                                    <i class="fas fa-retweet"></i>
+                                </div>
+                            </div>
+                            <div class="product-item-name">Bowflex BXE116 Elliptical</div>
+                            <div class="product-item-price">$421.00</div>
+                            <div class=""></div>
+                        </div>
+                        <div class="product-item">
+                            <div
+                                class="product-item-img"
+                                style="background-image: url(./acssets/image/ethos-ghd.png)"
+                            ></div>
+                            <!-- <img class="product-item-img" src="./acssets/image/ethos-ghd.png" alt="123" /> -->
+                            <div class="add-to-cart">
+                                <div class="icon-cart">
+                                    <i class="fas fa-cart-plus"></i>
+                                </div>
+                                <div class="icon-eye">
+                                    <i class="far fa-eye"></i>
+                                </div>
+                                <div class="icon-heart">
+                                    <i class="far fa-heart"></i>
+                                </div>
+                                <div class="icon-left-right">
+                                    <i class="fas fa-retweet"></i>
+                                </div>
+                            </div>
+                            <div class="product-item-name">Ethos GHD</div>
+                            <div class="product-item-price">$152.00</div>
+                            <div class=""></div>
+                        </div>
+                        <div class="product-item">
+                            <div
+                                class="product-item-img"
+                                style="background-image: url(./acssets/image/afg-pro-7.2.png)"
+                            ></div>
+                            <!-- <img class="product-item-img" src="./acssets/image/afg-pro-7.2.png" alt="123" /> -->
+                            <div class="add-to-cart">
+                                <div class="icon-cart">
+                                    <i class="fas fa-cart-plus"></i>
+                                </div>
+                                <div class="icon-eye">
+                                    <i class="far fa-eye"></i>
+                                </div>
+                                <div class="icon-heart">
+                                    <i class="far fa-heart"></i>
+                                </div>
+                                <div class="icon-left-right">
+                                    <i class="fas fa-retweet"></i>
+                                </div>
+                            </div>
+                            <div class="product-item-name">AFG Pro 7.2Al incline</div>
+                            <div class="product-item-price">$252.00</div>
+                            <div class=""></div>
+                        </div>
+                        <div class="product-item">
+                            <div
+                                class="product-item-img"
+                                style="background-image: url(./acssets/image/weight-bench.png)"
+                            ></div>
+                            <!-- <img class="product-item-img" src="./acssets/image/weight-bench.png" alt="123" /> -->
+                            <div class="add-to-cart">
+                                <div class="icon-cart">
+                                    <i class="fas fa-cart-plus"></i>
+                                </div>
+                                <div class="icon-eye">
+                                    <i class="far fa-eye"></i>
+                                </div>
+                                <div class="icon-heart">
+                                    <i class="far fa-heart"></i>
+                                </div>
+                                <div class="icon-left-right">
+                                    <i class="fas fa-retweet"></i>
+                                </div>
+                            </div>
+                            <div class="product-item-name">Weight Bench</div>
+                            <div class="product-item-price">$412.00</div>
+                            <div class=""></div>
+                        </div>
+                        <div class="product-item">
+                            <div
+                                class="product-item-img"
+                                style="background-image: url(./acssets/image/profrom-hiit.png)"
+                            ></div>
+                            <!-- <img class="product-item-img" src="./acssets/image/profrom-hiit.png" alt="123" /> -->
+                            <div class="add-to-cart">
+                                <div class="icon-cart">
+                                    <i class="fas fa-cart-plus"></i>
+                                </div>
+                                <div class="icon-eye">
+                                    <i class="far fa-eye"></i>
+                                </div>
+                                <div class="icon-heart">
+                                    <i class="far fa-heart"></i>
+                                </div>
+                                <div class="icon-left-right">
+                                    <i class="fas fa-retweet"></i>
+                                </div>
+                            </div>
+                            <div class="product-item-name">Profrom Hiit Trainner Lite 5.9</div>
+                            <div class="product-item-price">$300.00</div>
+                            <div class=""></div>
+                        </div>
+                        <div class="product-item">
+                            <div
+                                class="product-item-img"
+                                style="background-image: url(./acssets/image/fitness-gear-pro.png)"
+                            ></div>
+                            <!-- <img class="product-item-img" src="./acssets/image/fitness-gear-pro.png" alt="123" /> -->
+                            <div class="add-to-cart">
+                                <div class="icon-cart">
+                                    <i class="fas fa-cart-plus"></i>
+                                </div>
+                                <div class="icon-eye">
+                                    <i class="far fa-eye"></i>
+                                </div>
+                                <div class="icon-heart">
+                                    <i class="far fa-heart"></i>
+                                </div>
+                                <div class="icon-left-right">
+                                    <i class="fas fa-retweet"></i>
+                                </div>
+                            </div>
+                            <div class="product-item-name">Fitness Gear Pro</div>
+                            <div class="product-item-price">$124.00</div>
+                            <div class=""></div>
+                        </div>
+                    </div>
+                    <div class="container-comment">
+                        <div class="container-comment-title">See What Say Said About Us</div>
+                        <div class="container-comment-user">
+                            <div class="avatar-user-comment">
+                                <img src="./acssets/image/avartar-user.png" alt="123" />
+                            </div>
+                            <div class="user-comment">
+                                "Good service. I bought a bicycle with a wrong but they accepted free return for me and
+                                exchange a new product for me. "
+                            </div>
+                            <div class="user-commnet-name">LINA</div>
+                            <div class="user-comment-client">Happy Clients</div>
+                            <div class="user-comment-dots">
+                                <div class="dot active"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-category">
+                        <img src="./acssets/image/fitnss-center.png" alt="123" />
+                        <img src="./acssets/image/sport-gym.png" alt="123" />
+                        <img src="./acssets/image/health-fitness.png" alt="123" />
+                        <img src="./acssets/image/best-local-gym.png" alt="123" />
+                        <img src="./acssets/image/power-lifter.png" alt="123" />
+                        <img src="./acssets/image/fitness-club.png" alt="123" />
+                    </div>
+                </div>
+            </div>
+            <footer class="footer">
+                <div class="grid">
+                    <div class="footer-information-up">
+                        <div class="footer-logo">
+                            <img src="./acssets/image/Logo.png" alt="123" />
+                        </div>
+                        <div class="footer-despcription">
+                            Áp dụng những kiến thức đã học để cắt 1 giao diện hoàn chỉnh Yêu cầu: Chuyển giao diện từ
+                            dạng psd sang dạng html, css giống với design, có tương thích trên mọi thiết bị. Trên màn
+                            hình tablet và mobile tự thiết kế sao cho phù hợp với từng màn hình
+                        </div>
+                        <div class="footer-social">
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-google-plus-g"></i>
+                            <i class="fab fa-youtube"></i>
+                        </div>
+                    </div>
+                    <div class="footer-information-down">
+                        <div class="footer-contact-us">
+                            <div class="contact-us-title">CONTACT US</div>
+                            <div class="address">
+                                <i class="fas fa-map-marker-alt"></i>
+                                200 Lincoln Ave, Sanlinas, CA 93901
+                            </div>
+                            <div class="phone-number">
+                                <i class="fas fa-phone-alt"></i>
+                                023 32423 223
+                            </div>
+                            <div class="email"><i class="fas fa-envelope"></i> gymax@example.com</div>
+                            <div class="time"><i class="far fa-clock"></i>9:00 - 22:00 All day</div>
+                        </div>
+                        <div class="footer-myaccount">
+                            <div class="footer-myaccount-title">MY ACCOUNT</div>
+                            <ul class="text-link">
+                                <li><a>My account</a></li>
+                                <li><a>Check out</a></li>
+                                <li><a>Register</a></li>
+                                <li><a>Login</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-infor">
+                            <div class="footer-infor-title">INFORMATION</div>
+                            <ul class="text-link">
+                                <li><a>About us</a></li>
+                                <li><a>Contact us</a></li>
+                                <li><a>Teams of user</a></li>
+                                <li><a>Privacy policy</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-quick-link">
+                            <div class="footer-quick-link-title">QUICK LINK</div>
+                            <ul class="text-link">
+                                <li><a>New uer</a></li>
+                                <li><a>Help center</a></li>
+                                <li><a>Report spam</a></li>
+                                <li><a>FAQs</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <script src="./main.js"></script>
+    </body>
 </html>

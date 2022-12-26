@@ -1,0 +1,266 @@
+@media (max-width: 1023px) {
+    .app {
+        .header {
+            .header__nav {
+                margin: 0 20px;
+                .header__nav-list {
+                    padding-left: 2px;
+                    .header__nav-link {
+                        padding: 1 3px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 740px) and (max-width: 1023px) {
+    .app {
+        .header {
+            .header__nav {
+                margin: 0 30px;
+                .header-logo {
+                    img {
+                        width: 150px;
+                    }
+                }
+                .header__nav-list {
+                    padding-left: 2px;
+                    padding-top: 5px;
+                    .header__nav-link {
+                        padding: 0 10px;
+                        font-size: 1.3rem;
+                    }
+                }
+                .header__nav-icons {
+                    font-size: 1.3rem;
+                }
+            }
+        }
+        .container {
+            .container-section {
+            }
+            .list-product {
+                display: grid;
+                grid-template-columns: 25% 25% 25% 25%;
+                gap: 5px;
+                .product-item {
+                    .product-item-img {
+                        height: 200px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 739px) {
+    .app {
+        .header {
+            .header__nav {
+                display: flex;
+                align-items: center;
+                margin: 0 40px;
+                .herader__nav-mobile {
+                    display: block;
+                    .herader__nav-bars {
+                        color: white;
+                        font-size: 2rem;
+                    }
+                    .nav__input:checked ~ .nav__overlay {
+                        display: block;
+                    }
+                    .nav__input:checked ~ .nav__moblie {
+                        transform: translateX(0);
+                        opacity: 1;
+                    }
+                    .nav__overlay {
+                        position: fixed;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        background-color: rgba(0, 0, 0, 0.6);
+                        z-index: 10;
+                        display: none;
+                        animation: fadeIn linear 0.3s;
+                    }
+                    .nav__moblie {
+                        position: fixed;
+                        top: 0;
+                        left: 0;
+                        bottom: 0;
+                        width: 300px;
+                        max-width: 100%;
+                        background-color: rgba(255, 255, 255);
+                        z-index: 11;
+                        padding-left: 20px;
+                        transform: translateX(-100%);
+                        opacity: 0;
+                        transition: transform linear 0.2s, opacity linear 0.2s;
+                        .mobile-search {
+                            display: flex;
+                            margin: 20px 15px;
+                            align-items: center;
+                            padding-bottom: 20px;
+                            border-bottom: 1px solid #ccc;
+                            input {
+                                width: 100%;
+                                padding: 8px 0;
+                                border-radius: 6px;
+                                outline: none;
+                                border: 1px solid #ccc;
+                                text-align: center;
+                            }
+                            i {
+                                padding: 10px 16px;
+                                background-color: #aaa;
+                                border-radius: 4px;
+                            }
+                        }
+                        .nav-moblie-list {
+                            list-style: none;
+                            display: flex;
+                            flex-direction: column;
+                            padding-left: 0;
+
+                            li {
+                                font-size: 1.8rem;
+                                text-align: left;
+                                padding: 15px 20px;
+                                cursor: pointer;
+
+                                &:hover {
+                                    background-color: #ccc;
+                                    border-radius: 5px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .header-logo {
+                    img {
+                        width: 130px;
+                    }
+                }
+                .header__nav-list {
+                }
+                .herder__nav-cart-mobile {
+                    color: white;
+                    font-size: 2rem;
+                    display: block;
+                }
+                .hide-on-mobile {
+                    display: none;
+                }
+            }
+        }
+        .header-down {
+            .header-down-main {
+                .header-down-left {
+                    .text-up-left {
+                        font-size: 2.5rem;
+                        line-height: 3rem;
+                    }
+                    .text-down-left {
+                        font-size: 2rem;
+                    }
+                    .text-description-left {
+                        font-size: 1.5rem;
+                        overflow: hidden;
+                        display: block;
+                        display: -webkit-box;
+                        -webkit-box-orient: vertical;
+                        -webkit-line-clamp: 6;
+                        margin-bottom: 10px;
+                    }
+                    .header-down-left-button {
+                        padding-bottom: 10px;
+                    }
+                }
+                .header-down-slide {
+                    display: grid;
+                    grid-template-columns: 33% 33% 33%;
+                    margin-bottom: 30px;
+                    .slide-1,
+                    .slide-2,
+                    .slide-3,
+                    .slide-4,
+                    .slide-5,
+                    .slide-6 {
+                        height: 120px;
+                    }
+                    .slide-2,
+                    .slide-4,
+                    .slide-6 {
+                        .slide-description {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+        .container {
+            margin-top: 200px;
+            .container-section {
+                .section-title {
+                    .section-tap-item {
+                        font-size: 1.3rem;
+                        text-align: center;
+                    }
+                }
+            }
+            .list-product {
+                display: grid;
+                grid-template-columns: 50% 50%;
+                gap: 20px;
+                .product-item {
+                    .product-item-img {
+                        width: 80%;
+                        height: 140px;
+                    }
+                    .product-item-name {
+                        padding-top: 10px;
+                        height: 40px;
+                    }
+                }
+            }
+            .container-comment {
+                .container-comment-title {
+                    font-size: 2rem;
+                    line-height: 2.5rem;
+                }
+            }
+        }
+        .footer {
+            .footer-information-down {
+                display: grid;
+                grid-template-columns: 50% 50%;
+                gap: 10px;
+                .footer-contact-us {
+                    padding-left: 5px;
+                    .contact-us-title {
+                        font-size: 1.7rem;
+                        margin-bottom: 20px;
+                        color: white;
+                    }
+                    i {
+                        padding: 10px 3px;
+                    }
+                    text {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

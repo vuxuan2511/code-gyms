@@ -1,0 +1,437 @@
+.app .header {
+  display: flex;
+  height: 70px;
+  background-color: rgba(41, 41, 41, 0.9);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: fixed;
+  width: 100vw;
+  box-shadow: 1px 0 3px #ccc;
+  z-index: 100;
+}
+.app .header .header__nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 30px;
+}
+.app .header .header__nav .header-logo {
+  cursor: pointer;
+}
+.app .header .header__nav .header__nav-list {
+  padding-top: 15px;
+  display: flex;
+  list-style: none;
+}
+.app .header .header__nav .header__nav-list .header__nav-link {
+  padding: 0 15px;
+  font-size: 1.6rem;
+  color: white;
+  cursor: pointer;
+}
+.app .header .header__nav .header__nav-list .header__nav-link :hover {
+  color: #ccc;
+}
+.app .header .header__nav .header__nav-icons {
+  display: flex;
+  color: white;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.app .header .header__nav .header__nav-icons :hover {
+  cursor: pointer;
+  color: #ccc;
+}
+.app .header .header__nav .header__nav-icons .icon-search {
+  padding-right: 15px;
+}
+.app .header .header__nav .header__nav-icons .icon-cart {
+  padding: 0 15px;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+.app .header .header__nav .header__nav-icons .icon-user {
+  padding-left: 15px;
+}
+.app .header-down {
+  height: 650px;
+  background-image: linear-gradient(rgba(87, 87, 87, 0.2), rgba(65, 65, 65, 0.6)), url(../acssets/image/the-female.jpg);
+  align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.app .header-down .header-down-main {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-top: 100px;
+  margin: 0 30px;
+}
+.app .header-down .header-down-main .header-down-left {
+  color: white;
+  width: 50%;
+}
+.app .header-down .header-down-main .header-down-left .text-up-left {
+  font-size: 4rem;
+  padding-bottom: 20px;
+}
+.app .header-down .header-down-main .header-down-left .text-down-left {
+  font-size: 3rem;
+  padding-bottom: 20px;
+  line-height: 3.5rem;
+}
+.app .header-down .header-down-main .header-down-left .text-description-left {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  padding-bottom: 20px;
+}
+.app .header-down .header-down-main .header-down-left .header-down-left-button button {
+  font-size: 1.3rem;
+  color: white;
+  padding: 10px 20px;
+  background-color: transparent;
+  outline: none;
+  border: 1px solid rgb(90, 83, 83);
+  border-radius: 4px;
+  cursor: pointer;
+}
+.app .header-down .header-down-main .header-down-left .header-down-left-button :hover {
+  color: #dd3032;
+}
+.app .header-down .header-down-main .header-down-right {
+  width: 50%;
+  background-image: url(../acssets/image/Screenshot_2.png);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+  height: 400px;
+}
+.app .header-down .header-down-main .header-down-slide {
+  display: grid;
+  grid-template-columns: 33.33% 33.33% 33.33%;
+  margin: 0 auto;
+  border: 1px solid rgb(143, 114, 114);
+  box-shadow: 2px 2px rgb(136, 132, 132);
+  margin-bottom: 30px;
+}
+.app .header-down .header-down-main .header-down-slide .slide-1,
+.app .header-down .header-down-main .header-down-slide .slide-2,
+.app .header-down .header-down-main .header-down-slide .slide-3,
+.app .header-down .header-down-main .header-down-slide .slide-4,
+.app .header-down .header-down-main .header-down-slide .slide-5,
+.app .header-down .header-down-main .header-down-slide .slide-6 {
+  height: 200px;
+}
+.app .header-down .header-down-main .header-down-slide .slide-1,
+.app .header-down .header-down-main .header-down-slide .slide-3,
+.app .header-down .header-down-main .header-down-slide .slide-5 {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.app .header-down .header-down-main .header-down-slide .slide-2,
+.app .header-down .header-down-main .header-down-slide .slide-4,
+.app .header-down .header-down-main .header-down-slide .slide-6 {
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
+  background-color: white;
+}
+.app .header-down .header-down-main .header-down-slide .slide-2 .slide-text,
+.app .header-down .header-down-main .header-down-slide .slide-4 .slide-text,
+.app .header-down .header-down-main .header-down-slide .slide-6 .slide-text {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+.app .header-down .header-down-main .header-down-slide .slide-2 .slide-description,
+.app .header-down .header-down-main .header-down-slide .slide-4 .slide-description,
+.app .header-down .header-down-main .header-down-slide .slide-6 .slide-description {
+  padding-top: 10px;
+  font-size: 1.1rem;
+  padding: 0 5px;
+}
+.app .header-down .header-down-main .header-down-slide .slide-1 {
+  background-image: url(../acssets/image/slide-1.png);
+}
+.app .header-down .header-down-main .header-down-slide .slide-3 {
+  background-image: url(../acssets/image/slide-2.png);
+}
+.app .header-down .header-down-main .header-down-slide .slide-5 {
+  background-image: url(../acssets/image/slide-3.png);
+}
+.app .container {
+  margin: 350px 30px 80px 30px;
+}
+.app .container .container-section .section-title {
+  display: flex;
+  position: relative;
+  border-bottom: 1px solid #ccc;
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 50px;
+}
+.app .container .container-section .section-title .line {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 6px;
+  border-radius: 15px;
+  background-color: #c23564;
+  transition: all 0.2s ease;
+}
+.app .container .container-section .section-title .section-tap-item {
+  min-width: 80px;
+  padding: 16px 20px 11px 20px;
+  font-size: 2rem;
+  text-align: center;
+  color: black;
+  background-color: #fff;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom: 5px solid transparent;
+  opacity: 0.7;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.app .container .container-section .section-title .section-tap-item:hover {
+  opacity: 1;
+  background-color: rgba(194, 53, 100, 0.05);
+  border-color: rgba(194, 53, 100, 0.1);
+}
+.app .container .container-section .section-title .active {
+  opacity: 1;
+  color: #dd3032;
+}
+.app .container .list-product {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  gap: 10px;
+  margin: 0 30px;
+}
+.app .container .list-product .product-item {
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+.app .container .list-product .product-item:hover {
+  box-shadow: 1px 1px 1px 2px #ccc;
+  border-radius: 10px;
+}
+.app .container .list-product .product-item:hover .product-item-img,
+.app .container .list-product .product-item:hover .product-item-name {
+  opacity: 0.6;
+}
+.app .container .list-product .product-item:hover .add-to-cart {
+  display: block;
+  opacity: 1;
+}
+.app .container .list-product .product-item .add-to-cart {
+  position: absolute;
+  right: 10px;
+  top: 40px;
+  width: 50px;
+  height: 210px;
+  display: none;
+}
+.app .container .list-product .product-item .add-to-cart .icon-cart {
+  font-size: 2rem;
+  color: rgb(0, 0, 0);
+  padding: 5px;
+  border: 1px solid #333;
+  border-radius: 1px 6px;
+  cursor: pointer;
+}
+.app .container .list-product .product-item .add-to-cart .active {
+  background-color: #dd3032;
+  color: white;
+}
+.app .container .list-product .product-item .add-to-cart .icon-eye,
+.app .container .list-product .product-item .add-to-cart .icon-heart,
+.app .container .list-product .product-item .add-to-cart .icon-left-right {
+  margin-top: 10px;
+  font-size: 2rem;
+  color: #333;
+  padding: 5px;
+  border: 1px solid #333;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.app .container .list-product .product-item .product-item-img {
+  width: 100%;
+  height: 250px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.app .container .list-product .product-item .product-item-name {
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding-top: 20px;
+  overflow: hidden;
+  display: block;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.app .container .list-product .product-item .product-item-price {
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding: 20px 0;
+}
+.app .container .container-comment {
+  margin: 100px auto 30px auto;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+}
+.app .container .container-comment .container-comment-title {
+  font-size: 3rem;
+  font-weight: 600;
+}
+.app .container .container-comment .container-comment-user .avatar-user-comment {
+  margin-top: 50px;
+}
+.app .container .container-comment .container-comment-user .avatar-user-comment img {
+  width: 80px;
+  border-radius: 50%;
+}
+.app .container .container-comment .container-comment-user .user-comment {
+  padding-top: 20px;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.app .container .container-comment .container-comment-user .user-commnet-name {
+  padding-top: 40px;
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+.app .container .container-comment .container-comment-user .user-comment-client {
+  padding-top: 20px;
+  font-size: 1.5rem;
+}
+.app .container .container-comment .container-comment-user .user-comment-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+.app .container .container-comment .container-comment-user .user-comment-dots .dot {
+  height: 8px;
+  width: 8px;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.app .container .container-comment .container-comment-user .user-comment-dots .active {
+  background-color: red;
+}
+.app .container .list-category {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.app .footer {
+  display: flex;
+  background-color: #222222;
+}
+.app .footer .footer-information-up {
+  margin: 50px auto;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+}
+.app .footer .footer-information-up .footer-despcription {
+  font-size: 1.4rem;
+  color: #999;
+  padding: 15px 15%;
+  line-height: 2rem;
+}
+.app .footer .footer-information-up .footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 2.5rem;
+  color: #999;
+  padding-bottom: 50px;
+}
+.app .footer .footer-information-up .footer-social i:hover {
+  cursor: pointer;
+}
+.app .footer .footer-information-down {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  gap: 40px;
+  font-size: 1.3rem;
+  color: #999;
+  text-align: left;
+}
+.app .footer .footer-information-down .footer-contact-us {
+  padding-left: 10px;
+}
+.app .footer .footer-information-down .footer-contact-us .contact-us-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: white;
+}
+.app .footer .footer-information-down .footer-contact-us i {
+  padding: 10px;
+}
+.app .footer .footer-information-down .footer-myaccount .footer-myaccount-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: white;
+}
+.app .footer .footer-information-down .footer-myaccount ul {
+  list-style: none;
+  padding-left: 0;
+}
+.app .footer .footer-information-down .footer-myaccount ul li {
+  padding: 10px;
+}
+.app .footer .footer-information-down .footer-myaccount ul li:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.app .footer .footer-information-down .footer-infor {
+  padding-left: 10px;
+}
+.app .footer .footer-information-down .footer-infor .footer-infor-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: white;
+}
+.app .footer .footer-information-down .footer-infor ul {
+  list-style: none;
+  padding-left: 0;
+}
+.app .footer .footer-information-down .footer-infor ul li {
+  padding: 10px;
+}
+.app .footer .footer-information-down .footer-infor ul li:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.app .footer .footer-information-down .footer-quick-link .footer-quick-link-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: white;
+}
+.app .footer .footer-information-down .footer-quick-link ul {
+  list-style: none;
+  padding-left: 0;
+}
+.app .footer .footer-information-down .footer-quick-link ul li {
+  padding: 10px;
+}
+.app .footer .footer-information-down .footer-quick-link ul li:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}/*# sourceMappingURL=style.css.map */
