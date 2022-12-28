@@ -4,8 +4,10 @@
 html {
     font-size: 62.5%;
     line-height: 1.5rem;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
+}
+body {
     overflow-x: hidden;
 }
 
