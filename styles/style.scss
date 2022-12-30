@@ -1,7 +1,7 @@
 .app {
     .header {
         display: flex;
-        height: 70px;
+        height: 100px;
         background-color: rgba(41, 41, 41, 0.9);
         align-items: center;
         justify-content: center;
@@ -13,17 +13,22 @@
         .header__nav {
             display: flex;
             justify-content: space-between;
-            margin: 0 30px;
+            text-align: center;
+
             .header-logo {
                 cursor: pointer;
+                padding-left: 10px;
             }
             .header__nav-list {
-                padding-top: 15px;
                 display: flex;
                 list-style: none;
+                text-align: center;
+                align-items: center;
+                width: 100%;
+                justify-content: space-between;
+                margin: 0 100px 0 50px;
                 .header__nav-link {
-                    padding: 0 15px;
-                    font-size: 1.6rem;
+                    font-size: 1.8rem;
                     color: white;
                     cursor: pointer;
                     :hover {
@@ -35,23 +40,26 @@
                 display: flex;
                 color: white;
                 align-items: center;
-                font-size: 1.5rem;
-                font-weight: 400;
 
+                font-size: 1.4rem;
+                padding-top: 6px;
+                padding-left: 40px;
+                //margin-right: 50px;
                 :hover {
                     cursor: pointer;
                     color: #ccc;
                 }
                 .icon-search {
-                    padding-right: 15px;
+                    //padding-right: 30px;
                 }
                 .icon-cart {
-                    padding: 0 15px;
+                    //   padding: 0 30px;
                     border-left: 1px solid #ccc;
                     border-right: 1px solid #ccc;
                 }
                 .icon-user {
-                    padding-left: 15px;
+                    // padding-left: 30px;
+                    //  padding-right: 10px;
                 }
             }
         }

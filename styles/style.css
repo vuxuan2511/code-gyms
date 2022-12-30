@@ -1,6 +1,6 @@
 .app .header {
   display: flex;
-  height: 70px;
+  height: 100px;
   background-color: rgba(41, 41, 41, 0.9);
   align-items: center;
   justify-content: center;
@@ -13,19 +13,23 @@
 .app .header .header__nav {
   display: flex;
   justify-content: space-between;
-  margin: 0 30px;
+  text-align: center;
 }
 .app .header .header__nav .header-logo {
   cursor: pointer;
+  padding-left: 10px;
 }
 .app .header .header__nav .header__nav-list {
-  padding-top: 15px;
   display: flex;
   list-style: none;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  margin: 0 100px 0 50px;
 }
 .app .header .header__nav .header__nav-list .header__nav-link {
-  padding: 0 15px;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   color: white;
   cursor: pointer;
 }
@@ -36,23 +40,17 @@
   display: flex;
   color: white;
   align-items: center;
-  font-size: 1.5rem;
-  font-weight: 400;
+  font-size: 1.4rem;
+  padding-top: 6px;
+  padding-left: 40px;
 }
 .app .header .header__nav .header__nav-icons :hover {
   cursor: pointer;
   color: #ccc;
 }
-.app .header .header__nav .header__nav-icons .icon-search {
-  padding-right: 15px;
-}
 .app .header .header__nav .header__nav-icons .icon-cart {
-  padding: 0 15px;
   border-left: 1px solid #ccc;
   border-right: 1px solid #ccc;
-}
-.app .header .header__nav .header__nav-icons .icon-user {
-  padding-left: 15px;
 }
 .app .header-down {
   height: 650px;
