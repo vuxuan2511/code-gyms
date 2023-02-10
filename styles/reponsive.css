@@ -6,6 +6,7 @@
     grid-template-columns: auto auto auto;
     margin: 0 auto;
     justify-content: center;
+    padding: 0 10px;
   }
   .app .header-down .header-down-slide .slide-1,
   .app .header-down .header-down-slide .slide-2,
@@ -19,7 +20,8 @@
   .app .header-down .show-on-tablet .slide-4,
   .app .header-down .show-on-tablet .slide-5,
   .app .header-down .show-on-tablet .slide-6 {
-    width: 300px;
+    width: auto;
+    max-width: 300px;
     height: 200px;
   }
   .app .header-down .header-down-slide .slide-2 img,
@@ -283,7 +285,8 @@
   .app .header-down .show-on-tablet .slide-4,
   .app .header-down .show-on-tablet .slide-5,
   .app .header-down .show-on-tablet .slide-6 {
-    height: 180px;
+    width: auto;
+    max-height: 180px;
     display: flex;
     flex-direction: column;
   }
