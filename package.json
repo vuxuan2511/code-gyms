@@ -3,6 +3,7 @@
         "watch:sass": "node-sass -w styles/style.scss styles/style.css "
     },
     "dependencies": {
-        "node-sass": "^8.0.0"
+        "node-sass": "^8.0.0",
+        "react-slick": "^0.29.0"
     }
 }
