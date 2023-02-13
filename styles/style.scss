@@ -403,6 +403,9 @@
                 background-size: contain;
                 margin: 0 auto;
             }
+            &:hover {
+                cursor: pointer;
+            }
         }
     }
     .footer {
@@ -417,6 +420,11 @@
             align-items: center;
             text-align: center;
             border-bottom: 1px solid #ccc;
+            .footer-logo {
+                &:hover {
+                    cursor: pointer;
+                }
+            }
             .footer-despcription {
                 font-size: 1.4rem;
                 color: #999;

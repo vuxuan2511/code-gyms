@@ -417,6 +417,9 @@
   background-size: contain;
   margin: 0 auto;
 }
+.app .container .list-category:hover {
+  cursor: pointer;
+}
 .app .footer {
   display: flex;
   background-color: #222222;
@@ -429,6 +432,9 @@
   align-items: center;
   text-align: center;
   border-bottom: 1px solid #ccc;
+}
+.app .footer .footer-information-up .footer-logo:hover {
+  cursor: pointer;
 }
 .app .footer .footer-information-up .footer-despcription {
   font-size: 1.4rem;
