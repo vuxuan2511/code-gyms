@@ -1,4 +1,28 @@
-@media (max-width: 1199px) {
+@media (max-width: 1250px) {
+  .app .header {
+    width: 100vw;
+    overflow-x: hidden;
+  }
+  .app .header .header__nav {
+    margin: 0 30px;
+  }
+  .app .header .header__nav .header-logo img {
+    width: 150px;
+  }
+  .app .header .header__nav .header__nav-list {
+    padding-left: 2px;
+    padding-top: 5px;
+  }
+  .app .header .header__nav .header__nav-list .header__nav-link {
+    padding: 0 10px;
+    font-size: 1.3rem;
+  }
+  .app .header .header__nav .header__nav-icons {
+    font-size: 1.3rem;
+  }
+  .app .header-down .header-down-main .header-down-right {
+    margin-left: 100px;
+  }
   .app .header-down .header-down-slide,
   .app .header-down .show-on-tablet {
     display: grid;
@@ -59,8 +83,22 @@
   .app .header .header__nav .header__nav-icons {
     font-size: 1.3rem;
   }
+  .app .header-down .header-down-main {
+    margin: 0 10px;
+  }
+  .app .header-down .header-down-main .header-down-left .text-up-left {
+    font-size: 4.5rem;
+  }
+  .app .header-down .header-down-main .header-down-left .text-down-left {
+    font-size: 3rem;
+  }
+  .app .header-down .header-down-main .header-down-left .text-description-left {
+    font-size: 1.5rem;
+  }
   .app .header-down .header-down-main .header-down-right {
     margin-top: 250px;
+    width: 400px;
+    margin-left: 70px;
   }
   .app .container .list-product {
     display: grid;
@@ -308,6 +346,10 @@
   }
   .app .container {
     margin-top: 530px;
+  }
+  .app .container .container-section {
+    display: flex;
+    justify-content: center;
   }
   .app .container .container-section .section-title .section-tap-item {
     font-size: 1.3rem;

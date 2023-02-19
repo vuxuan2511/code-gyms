@@ -1,6 +1,34 @@
-@media (max-width: 1199px) {
+@media (max-width: 1250px) {
     .app {
+        .header {
+            width: 100vw;
+            overflow-x: hidden;
+            .header__nav {
+                margin: 0 30px;
+                .header-logo {
+                    img {
+                        width: 150px;
+                    }
+                }
+                .header__nav-list {
+                    padding-left: 2px;
+                    padding-top: 5px;
+                    .header__nav-link {
+                        padding: 0 10px;
+                        font-size: 1.3rem;
+                    }
+                }
+                .header__nav-icons {
+                    font-size: 1.3rem;
+                }
+            }
+        }
         .header-down {
+            .header-down-main {
+                .header-down-right {
+                    margin-left: 100px;
+                }
+            }
             .header-down-slide,
             .show-on-tablet {
                 display: grid;
@@ -61,8 +89,22 @@
         }
         .header-down {
             .header-down-main {
+                margin: 0 10px;
+                .header-down-left {
+                    .text-up-left {
+                        font-size: 4.5rem;
+                    }
+                    .text-down-left {
+                        font-size: 3rem;
+                    }
+                    .text-description-left {
+                        font-size: 1.5rem;
+                    }
+                }
                 .header-down-right {
                     margin-top: 250px;
+                    width: 400px;
+                    margin-left: 70px;
                 }
             }
         }
@@ -333,6 +375,8 @@
         .container {
             margin-top: 530px;
             .container-section {
+                display: flex;
+                justify-content: center;
                 .section-title {
                     .section-tap-item {
                         font-size: 1.3rem;
